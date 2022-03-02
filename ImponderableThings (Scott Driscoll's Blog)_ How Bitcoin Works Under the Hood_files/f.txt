@@ -1,0 +1,11 @@
+(function(){/* 
+ 
+ Copyright The Closure Library Authors. 
+ SPDX-License-Identifier: Apache-2.0 
+*/ 
+function e(b){var a=0;return function(){return a<b.length?{done:!1,value:b[a++]}:{done:!0}}};/* 
+ 
+ SPDX-License-Identifier: Apache-2.0 
+*/ 
+var g=[];function h(){var b=g;g=[];var a="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];b=a?a.call(b):{next:e(b)};for(a=b.next();!a.done;a=b.next()){a=a.value;try{a()}catch(f){}}};function k(){var b=document.currentScript;return(b=void 0===b?null:b)&&"26"===b.getAttribute("data-jc")?b:document.querySelector('[data-jc="26"]')};var l=document;function n(){for(var b=l.head,a=b.querySelectorAll("link[data-reload-stylesheet][as=style][rel=preload]"),f=0;f<a.length;f++){var q=a[f],c="link",m=document;c=String(c);"application/xhtml+xml"===m.contentType&&(c=c.toLowerCase());c=m.createElement(c);c.setAttribute("rel","stylesheet");c.setAttribute("href",q.getAttribute("href"));b.appendChild(c)}if(0<a.length){var d=void 0===d?.01:d;if(!(Math.random()>d)){b=k();b="https://"+(b&&"true"===b.getAttribute("data-jc-rcd")?"pagead2.googlesyndication-cn.com": 
+"pagead2.googlesyndication.com")+"/pagead/gen_204?id=jca&jc=26&version=";a=(a=k())&&a.getAttribute("data-jc-version")||"unknown";d=b+a+"&sample="+d;b=window;if(a=b.navigator)a=b.navigator.userAgent,a=/Chrome/.test(a)&&!/Edge/.test(a)?!0:!1;a&&b.navigator.sendBeacon?b.navigator.sendBeacon(d):(b.google_image_requests||(b.google_image_requests=[]),a=b.document,a=void 0===a?document:a,a=a.createElement("img"),a.src=d,b.google_image_requests.push(a))}}};var p=document;"complete"===p.readyState||"interactive"===p.readyState?(g.push(n),1==g.length&&(window.Promise?Promise.resolve().then(h):window.setImmediate?setImmediate(h):setTimeout(h,0))):p.addEventListener("DOMContentLoaded",n);}).call(this);
